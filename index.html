@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafiyad Adane - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mark-to-grade.html">Mark to Grade</a></li>
+                <li><a href="staff-information.html">Staff Information</a></li>
+                <li><a href="temperature-converter.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nafiyad Adane</h1>
+        <div id="photo-container" style="display: none;">
+            <img src="1.png" alt="Nafiyad Adane">
+        </div>
+        <section>
+            <p>Hello! I'm Nafiyad Adane, a first-year software development student at Bow Valley College. Originally from Ethiopia, I've embarked on an exciting journey to pursue my passion for technology and programming in Canada. 
+                My goal is to become a fullstack website developer, combining my creativity with technical skills to build innovative and user-friendly web applications.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Nafiyad Adane. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        setTimeout(() => {
+            document.getElementById('photo-container').style.display = 'block';
+        }, 10000);
+    </script>
+</body>
+</html>
